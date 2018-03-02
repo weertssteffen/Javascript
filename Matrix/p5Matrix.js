@@ -54,7 +54,7 @@ function Zeichen(x, y, speed) {
 function Strang() {
     this.symbole = [];
     this.anzahl = round(random(5, 30));
-    this.speed = round(random(5, 10));
+    this.speed = round(random(7, 10));
         
     this.erstelleStrang = function(x, y) {
         y = round(random(-500, -100));
@@ -68,7 +68,7 @@ function Strang() {
     
     this.show = function() {
         this.symbole.forEach(function(Zeichen){
-            fill(0, 255, 70);
+            fill(56,254,20);
             text(Zeichen.nummer, Zeichen.x, Zeichen.y);
             Zeichen.lauf();
             Zeichen.zufälligesZeichen();
